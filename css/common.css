@@ -210,6 +210,13 @@
 .footer .ft_top img {
     width: 100%;
 }
+/* footer */
+.footer {
+    background-color: #F3F2D3;
+}
+.footer .ft_top {
+    background-color: #F3F2D3;
+}
 .footer .ft_top.active {
     transform: translate(0, 30px);
 }
