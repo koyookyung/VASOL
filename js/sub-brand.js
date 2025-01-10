@@ -3,14 +3,17 @@ $(function () {
   $('.footer').load('../common/footer.html');
 
   //vasol
+  $('.vasol .etc').each(function(index){
+    //$(this).addClass('on'+ index);
+    $(this).delay(100 * index).animate({
+      opacity : 1
+  }, 4000, 'easeInOutBounce');
+  });
+
   $(window).scroll(function(){
     let scrollBar = $(window).scrollTop();
 
-    if(scrollBar >= 0) {
-      $('.vasol .etc').each(function(index){
-        $(this).addClass('on' + index)
-      });
-    } else if (scrollBar === 0) {
+    if(scrollBar === 0) {
       $('.vasol .etc').each(function(index){
         $(this).removeClass('on' + index)
       });

@@ -45,42 +45,7 @@ section h1 {
 .vasol .wrap .etc {
     opacity: 0;
 }
-.vasol .wrap .etc.on0 {
-    opacity: 1;
-    transition-delay: 0.1s;
-}
-.vasol .wrap .etc.on1 {
-    opacity: 1;
-    transition-delay: 0.4s;
-}
-.vasol .wrap .etc.on2 {
-    opacity: 1;
-    transition-delay: 0.6s;
-}
-.vasol .wrap .etc.on3 {
-    opacity: 1;
-    transition-delay: 0.8s;
-}
-.vasol .wrap .etc.on4 {
-    opacity: 1;
-    transition-delay: 1s;
-}
-.vasol .wrap .etc.on5 {
-    opacity: 1;
-    transition-delay: 1.2s;
-}
-.vasol .wrap .etc.on6 {
-    opacity: 1;
-    transition-delay: 1.4s;
-}
-.vasol .wrap .etc.on7 {
-    opacity: 1;
-    transition-delay: 1.6s;
-}
-.vasol .wrap .etc.on8 {
-    opacity: 1;
-    transition-delay: 1.8s;
-}
+
 .vasol .wrap .cup {
     position: absolute;
     left: 20%;
@@ -500,4 +465,3 @@ section h1 {
 }
 
 /* 1370 */
-@media screen 
