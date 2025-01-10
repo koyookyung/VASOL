@@ -216,6 +216,7 @@
 }
 .footer .ft_top {
     background-color: #F3F2D3;
+    transform: translate(0, 0);
 }
 .footer .ft_top.active {
     transform: translate(0, 30px);

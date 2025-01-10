@@ -21,7 +21,7 @@ $(function(){
     //푸터
     setInterval(function () {
         $('.ft_top').toggleClass('active');
-    }, 700)
+    }, 1000)
 
     //탑버튼
     let topBtn = $('.top_btn');
