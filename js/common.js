@@ -1,4 +1,5 @@
 $(function(){
+
     //메뉴버튼
     $('.menu_btn').click(function () {
         $('.gnb').animate({
@@ -21,7 +22,7 @@ $(function(){
     //푸터
     setInterval(function () {
         $('.ft_top').toggleClass('active');
-    }, 1000, 'linear')
+    }, 700, 'linear')
 
     //탑버튼
     let topBtn = $('.top_btn');

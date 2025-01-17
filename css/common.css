@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+.mobile {
+    display: none;
+}
+
 /* header */
 .header {
     width: 100%;
@@ -235,4 +239,87 @@
 }
 .top_btn:hover .before {
     display: none;
+}
+
+
+@media screen and (max-width: 110rem) {
+    .pc {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+
+    /* header */
+    .header .inner {
+        max-width: 110rem;
+        width: calc(100% - 5rem);  
+    }
+    .header .inner .left {
+        display: flex;
+        gap: 15px;
+    }
+    .header .inner .left .menu img {
+        width: 20px;
+    }
+    .header .inner .left .menu .gnb {
+        width: 30%;
+        left: -30%;
+    }
+    .header .inner .left .search {
+        width: 25px;
+        height: 25px;
+    }
+    .header .inner .left .search button {
+        background-color: transparent;
+        border: 0;
+    }
+    .header .inner .left .search img {
+        width: 100%;
+        height: 100%;
+    }
+    .header .inner .logo img {
+        height: 6.3rem;
+    }
+    .header .inner .right ul {
+        display: flex;
+        gap: 15px;
+    }
+
+    /* footer */
+    .footer .ft_bt .inner {
+        font-size: 18px;
+    }
+    .footer .ft_bt .inner .text .info .bt_logo {
+        max-height: 8.3rem;
+        height: 9.12vw;
+    }
+    .footer .ft_bt .inner .text .info .policy {
+        margin-left: 4rem;
+    }
+    .footer .ft_bt .inner .text .company {
+        margin-top: 4rem;
+    }
+    .footer .ft_bt .inner .text .company ul {
+        gap: 10px;
+    }
+    .footer .ft_bt .inner .sns ul li {
+        width: 3.5rem;
+    }
+    .footer .ft_bt .inner .sns ul li span {
+        display: none;
+    }
+    .footer .ft_bt .inner .sns ul li img {
+        width: 100%;
+    }
+    .footer .ft_bt .image {
+        max-height: 11rem;
+        height: 12.08vw;
+    }
+    .top_btn .before {
+        width: 3.5px;
+    }
+    .top_btn .after {
+        height: 10.7rem;
+    }
 }
