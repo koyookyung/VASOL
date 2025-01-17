@@ -13,11 +13,39 @@ $(function(){
     });//close_btn.click()
 
     //2차메뉴
-    $('.gnb .text > li').mouseenter(function () {
-        $(this).find('.depth02').stop().slideDown()
-    }).mouseleave(function () {
-        $(this).find('.depth02').stop().slideUp()
-    });
+    $('.gnb .depth01').click(function(){
+        if($(this).next().css('display') === 'none') {
+            $('.gnb .depth02').slideUp();
+            $(this).next().slideDown();
+            $('.gnb .depth01').css({
+                'background-color' : '#faebd7',
+                'color' : '#333'
+            });
+            $(this).css({
+                'background-color' : '#fff',
+                'color' : '#D3E1BE'
+            })
+        } else {
+            $(this).next().slideUp();
+            $(this).css({
+                'background-color' : '#faebd7',
+                'color' : '#333'
+            })
+        }
+    })//depth01.click()
+   
+    $('.gnb .depth01').mouseenter(function(){
+        $(this).css({
+            'background-color' : '#fff',
+            'color' : '#D3E1BE'
+        });
+    })//depth01.mouseenter()
+    $('.gnb .depth01').mouseleave(function(){
+        $(this).css({
+            'background-color' : '#faebd7',
+            'color' : '#333'
+        });
+    })//depth01.mouseover()
 
     //푸터
     setInterval(function () {
