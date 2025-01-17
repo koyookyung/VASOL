@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* header */
-.header .mobile {
+.mobile {
     display: none;
 }
 
@@ -13,7 +13,7 @@
     left: 0;
     z-index: 999;
 }
-.header .inner {
+.header .pc .inner {
     width: calc(100% - 10rem);
     height: 100px;
     display: flex;
@@ -22,7 +22,7 @@
     align-items: center;
     position: relative;
 }
-.header .inner .menu .gnb {
+.header .pc .inner .menu .gnb {
     width: 25%;
     height: 100vh;
     background-color:antiquewhite;
@@ -33,51 +33,51 @@
     top: 0;
     left: -25%;
 }
-.header .inner .menu .gnb .text > li:first-child {
+.header .pc .inner .menu .gnb .text > li:first-child {
     margin-top: 5rem;
 }
-.header .inner .menu .gnb .text > li > .depth01 {
+.header .pc .inner .menu .gnb .text > li > .depth01 {
     width: 100%;
     height: 8rem;
     font-size: 25px;
     text-align: center;
     line-height: 8rem;
 }
-.header .inner .menu .gnb .text > li > .depth01:hover {
+.header .pc .inner .menu .gnb .text > li > .depth01:hover {
     background-color: #fff;
     color: #D3E1BE;
 }
-.header .inner .menu .gnb .text > li {
+.header .pc .inner .menu .gnb .text > li {
     position: relative;
 }
-.header .inner .menu .gnb .text > li > .depth02 {
+.header .pc .inner .menu .gnb .text > li > .depth02 {
     width: 100%;
     font-size: 20px;
     text-align: center;
     display: none;
 }
-.header .inner .menu .gnb .text > li > .depth02 li {
+.header .pc .inner .menu .gnb .text > li > .depth02 li {
     height: 6rem;
     line-height: 6rem;
     border-bottom: 2px solid #f8f8e2;
 }
-.header .inner .menu .gnb .text > li > .depth02 li:hover {
+.header .pc .inner .menu .gnb .text > li > .depth02 li:hover {
     color:#8e997d;
     background-color: #fff;
 }
-.header .inner .menu .gnb img {
+.header .pc .inner .menu .gnb img {
     width: calc(90% - 4rem);
     margin: 0 auto;
 }
-.header .inner .menu .menu_btn {
+.header .pc .inner .menu .menu_btn {
     border: 0;
     background-color: transparent;
     cursor: pointer;
 }
-.header .inner .menu_btn img {
+.header .pc .inner .menu_btn img {
     width: 30px;
 }
-.header .inner .menu .gnb .close_btn {
+.header .pc .inner .menu .gnb .close_btn {
     width: 20px;
     height:20px;
     border: 0;
@@ -87,30 +87,30 @@
     top: 20px;
     cursor: pointer;
 }
-.header .inner .menu .gnb .close_btn img {
+.header .pc .inner .menu .gnb .close_btn img {
     width: 100%;
     object-fit: cover;
 }
-.header .inner .logo {
+.header .pc .inner .logo {
     height: 75px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
-.header .inner .logo a {
+.header .pc .inner .logo a {
     height: 100%;
 }
-.header .inner .logo img {
+.header .pc .inner .logo img {
     height: 100%;
 }
-.header .inner .util ul {
+.header .pc .inner .util ul {
     display: flex;
     font-size: 25px
 }
-.header .inner .util ul li {
+.header .pc .inner .util ul li {
     padding: 0 15px;
 }
-.header .inner .util ul li:last-child {
+.header .pc .inner .util ul li:last-child {
     padding-right: 0;
 }
 
@@ -241,8 +241,7 @@
     display: none;
 }
 
-
-@media screen and (max-width: 110rem) {
+@media screen and (max-width: 1100px) {
     .header .pc {
         display: none;
     }
@@ -251,7 +250,7 @@
     }
 
     /* header */
-    .header .mobile {
+    .header .mobile .inner {
         max-width: 110rem;
         width: calc(100% - 5rem);  
         display: flex;
@@ -260,15 +259,15 @@
         align-items: center;
         position: relative;
     }
-    .header .mobile .left {
+    .header .mobile .inner .left {
         display: flex;
         gap: 15px;
     }
-    .header .mobile .left .menu img {
+    .header .mobile .inner .left .menu img {
         width: 20px;
     }
-    .header .mobile .left .menu .gnb {
-        width: 30%;
+    .header .mobile .inner .left .menu .gnb {
+        width: 25%;
         height: 100vh;
         background-color:antiquewhite;
         display: flex;
@@ -276,53 +275,53 @@
         justify-content: space-between;
         position: fixed;
         top: 0;
-        left: -30%;
+        left: -25%;
     }
-    .header .mobile .left .menu .gnb .text > li:first-child {
+    .header .mobile .inner .left .menu .gnb .text > li:first-child {
         margin-top: 5rem;
     }
-    .header .mobile .left .menu .gnb .text > li > .depth01 {
+    .header .mobile .inner .left .menu .gnb .text > li > .depth01 {
         width: 100%;
         height: 8rem;
         font-size: 25px;
         text-align: center;
         line-height: 8rem;
     }
-    .header .mobile .left .menu .gnb .text > li > .depth01:hover {
+    .header .mobile .inner .left .menu .gnb .text > li > .depth01:hover {
         background-color: #fff;
         color: #D3E1BE;
     }
-    .header .mobile .left .menu .gnb .text > li {
+    .header .mobile .inner .left .menu .gnb .text > li {
         position: relative;
     }
-    .header .mobile .left .menu .gnb .text > li > .depth02 {
+    .header .mobile .inner .left .menu .gnb .text > li > .depth02 {
         width: 100%;
         font-size: 20px;
         text-align: center;
         display: none;
     }
-    .header .mobile .left .menu .gnb .text > li > .depth02 li {
+    .header .mobile .inner .left .menu .gnb .text > li > .depth02 li {
         height: 6rem;
         line-height: 6rem;
         border-bottom: 2px solid #f8f8e2;
     }
-    .header .mobile .left .menu .gnb .text > li > .depth02 li:hover {
+    .header .mobile .inner .left .menu .gnb .text > li > .depth02 li:hover {
         color:#8e997d;
         background-color: #fff;
     }
-    .header .mobile .left .menu .gnb img {
+    .header .mobile .inner .left .menu .gnb img {
         width: calc(90% - 4rem);
         margin: 0 auto;
     }
-    .header .mobile .left .menu .menu_btn {
+    .header .mobile .inner .left .menu .menu_btn {
         border: 0;
         background-color: transparent;
         cursor: pointer;
     }
-    .header .mobile .left .menu_btn img {
+    .header .mobile .inner .left .menu_btn img {
         width: 30px;
     }
-    .header .mobile .left .menu .gnb .close_btn {
+    .header .mobile .inner .left .menu .gnb .close_btn {
         width: 20px;
         height:20px;
         border: 0;
@@ -332,26 +331,26 @@
         top: 20px;
         cursor: pointer;
     }
-    .header .mobile .left .menu .gnb .close_btn img {
+    .header .mobile .inner .left .menu .gnb .close_btn img {
         width: 100%;
         object-fit: cover;
     }
-    .header .mobile .left .search {
+    .header .mobile .inner .left .search {
         width: 25px;
         height: 25px;
     }
-    .header .mobile .left .search button {
+    .header .mobile .inner .left .search button {
         background-color: transparent;
         border: 0;
     }
-    .header .mobile .left .search img {
+    .header .mobile .inner .left .search img {
         width: 100%;
         height: 100%;
     }
-    .header .mobile .logo img {
+    .header .mobile .inner .logo img {
         height: 6.3rem;
     }
-    .header .mobile .right ul {
+    .header .mobile .inner .right ul {
         display: flex;
         gap: 15px;
     }

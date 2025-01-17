@@ -8,7 +8,7 @@ $(function(){
     });//menu_btn.click()
     $('.close_btn').click(function () {
         $('.gnb').animate({
-            'left': '-25%'
+            'left': '-50%'
         }, 700)
     });//close_btn.click()
 
