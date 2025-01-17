@@ -252,7 +252,8 @@
     /* header */
     .header .mobile .inner {
         max-width: 110rem;
-        width: calc(100% - 5rem);  
+        width: calc(100% - 5rem);
+        height: 8rem;  
         display: flex;
         justify-content:space-between;
         margin: 0 auto;
@@ -267,7 +268,7 @@
         width: 20px;
     }
     .header .mobile .inner .left .menu .gnb {
-        width: 25%;
+        width: 30%;
         height: 100vh;
         background-color:antiquewhite;
         display: flex;
@@ -275,7 +276,7 @@
         justify-content: space-between;
         position: fixed;
         top: 0;
-        left: -25%;
+        left: -30%;
     }
     .header .mobile .inner .left .menu .gnb .text > li:first-child {
         margin-top: 5rem;

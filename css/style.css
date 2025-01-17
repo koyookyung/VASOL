@@ -497,3 +497,6 @@ section h2 {
 .footer .ft_top {
     background-color: #F3F2D3; 
 }
+
+
+@media screen and (max-width: 1100px)
