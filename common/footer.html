@@ -1,4 +1,35 @@
-<script src="/VASOL/js/common.js"></script>
+<script>
+    $(function () {
+
+        //푸터
+        setInterval(function () {
+            $('.ft_top').toggleClass('active');
+        }, 700, 'linear')
+
+        //탑버튼
+        let topBtn = $('.top_btn');
+
+        topBtn.click(function () {
+            $('html, body').animate({
+                scrollTop: 0
+            });
+        });//topBtn.click()
+
+        //console.log($('.main_menu').offset().top)
+
+        $(window).scroll(function () {
+            let scrollBar = $(window).scrollTop();
+            console.log(scrollBar);
+
+            if (scrollBar > 600) {
+
+                topBtn.fadeIn();
+            } else {
+                topBtn.fadeOut()
+            }
+        });//window.scroll()
+    });//script end
+</script>
 
 <div class="inner">
     <div class="ft_top">
