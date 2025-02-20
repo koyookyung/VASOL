@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Ownglyph meetme';
+    src: url('Ownglyph_meetme-Rg.eot');
+    src: url('Ownglyph_meetme-Rg.eot?#iefix') format('embedded-opentype'),
+        url('Ownglyph_meetme-Rg.woff2') format('woff2'),
+        url('Ownglyph_meetme-Rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
