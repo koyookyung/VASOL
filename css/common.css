@@ -305,7 +305,7 @@
         border-bottom: 2px solid #f8f8e2;
     }
     .header .mobile .inner .left .menu .gnb img {
-        width: calc(90% - 4rem);
+        width: 50%;
         margin: 0 auto;
     }
     .header .mobile .inner .left .menu .menu_btn {
@@ -451,6 +451,9 @@
     }
     .header .mobile .inner .logo img {
         height: 3.4rem;
+    }
+    .header .mobile .inner .left .menu .gnb img {
+        width: 80%;
     }
     .header .mobile .inner .left .search button {
         width: 25px;
