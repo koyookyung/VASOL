@@ -942,26 +942,38 @@ section h1 {
         right: 50%;
         transform: translate(50%);
     }
+    .talk .rabbit img {
+        height: 6.53vw;
+    }
     .talk .white_bear {
         top: 42%;
         left: 50%;
         transform: translateX(-50%);
+    }
+    .talk .white_bear img {
+        height: 6.86vw;
     }
     .talk .puppy {
         bottom: 26%;
         right: 50%;
         transform: translateX(50%);
     }
+    .talk .puppy img {
+        height: 5.76vw;
+    }
     .talk .puppy span {
         display: none;
-    }
-    .talk .brown_bear span {
-        display: block;
     }
     .talk .brown_bear {
         bottom: 8%;
         left: 50%;
         transform: translateX(-50%);
+    }
+    .talk .brown_bear img {
+        height: 6.15vw;
+    }
+    .talk .brown_bear span {
+        display: block;
     }
 
     /* message ---------------------------------- */
